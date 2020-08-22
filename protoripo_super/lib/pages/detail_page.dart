@@ -240,18 +240,18 @@ List<String> _listaCreador = [
 
   Widget _crearLista2(BuildContext context, String nombre, String imagen){
     return Container(
-                  padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-                  child: Card(
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                      color: Color.fromRGBO(49, 21, 133,1),
-                      margin: EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
-                      elevation: 5.0,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                          child: _posterTitulo2(context,nombre, imagen),
-                      ),
-              ),
-                );
+      padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+      child: Card(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+          color: Color.fromRGBO(49, 21, 133,1),
+          margin: EdgeInsets.symmetric(horizontal: 0.0, vertical: 0.0),
+          elevation: 5.0,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+              child: _posterTitulo2(context,nombre, imagen),
+          ),
+       ),
+    );
   }
 
 

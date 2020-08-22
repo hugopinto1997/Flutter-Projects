@@ -14,7 +14,7 @@ class _NewTaskInputState extends State<NewTaskInput> {
 
   DateTime newTaskDate;
   TextEditingController controller;
-  String _texto;
+  String _texto = '';
 
   @override
   void initState() { 
