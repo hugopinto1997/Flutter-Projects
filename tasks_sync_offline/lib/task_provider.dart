@@ -15,7 +15,7 @@ class TaskProvider {
      List<Task> t = new List();
      
      bod.forEach((element) { 
-       t.add(new Task(id: element['id'], name: element['name'], completed: element['completed']));
+       t.add(new Task(id: element['id'], name: element['name'], completed: element['completed'], dueDate: DateTime.parse(element['dueDate'])));
      });
 
      return t;

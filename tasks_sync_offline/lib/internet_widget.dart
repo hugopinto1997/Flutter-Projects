@@ -9,9 +9,13 @@ class InternetWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final ip = Provider.of<InternetProvider>(context);
     return 
-            Container(
-                    height: 32,
-                    color: ip.internet ? Colors.green : Colors.red,
+            AnimatedContainer(
+                    height: (ip.internet) ? 0 : 32,
+                    duration: Duration(seconds: 1),
+                    curve: Curves.fastOutSlowIn,
+                    decoration: BoxDecoration(
+                       color: ip.internet ? Colors.green : Colors.red,
+                    ),
                     child: Center(child: Text('${ip.internet ? 'Connected' : 'No internet connection'}'),),
                   );
   }

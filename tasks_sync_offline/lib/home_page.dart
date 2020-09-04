@@ -74,7 +74,8 @@ class _HomePageState extends State<HomePage> {
          final task = TasksCompanion(
           name: moor.Value(element.name),
           id: moor.Value(element.id),
-          completed: moor.Value(element.completed)
+          completed: moor.Value(element.completed),
+          dueDate: moor.Value(element.dueDate)
         );
         dao.insertTask(task);
      });
